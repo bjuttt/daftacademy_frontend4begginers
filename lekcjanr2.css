@@ -1,0 +1,25 @@
+
+.logo {
+    position: fixed;
+    top: 0px;
+    left: 0px
+  }
+.page-navigation {
+  position: fixed;
+  top: 70px;
+  left: 0px
+}
+.social {
+    position: fixed; 
+    top: auto;
+    bottom: 10px;
+}
+.section-height{
+    position: relative;
+    height: auto;
+    width: 70vw;
+}
+
+main{
+    margin-left: 200px;
+}
