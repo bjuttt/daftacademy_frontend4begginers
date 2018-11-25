@@ -1,25 +1,264 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3 {
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.screen-reader-only {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
 
 .logo {
     position: fixed;
-    top: 0px;
-    left: 0px
+    top: 50px;
+    left: 50px
   }
+
 .page-navigation {
-  position: fixed;
-  top: 70px;
-  left: 0px
+    position: fixed;
+    top: 120px;
+    left: 50px;
 }
+  
+.page-navigation a {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    color: #ef008e;
+    opacity: 0.8;
+    text-decoration: none;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
 .social {
     position: fixed; 
     top: auto;
-    bottom: 10px;
-}
-.section-height{
-    position: relative;
-    height: auto;
-    width: 70vw;
+    bottom: 50px;
+    left: 50px;
 }
 
-main{
-    margin-left: 200px;
+.section-height {
+    min-height: 100vh;
+}
+
+main {
+    margin-left: 300px;
+    padding: 0 10%;
+}
+
+body {
+    background-image: url("./images/background.svg");
+    background-color: #25072e;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed
+}
+
+h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 28px;
+    font-weight: bold;
+    color: #ef008e;
+    text-transform: uppercase;
+    text-align: right;
+    position: relative;
+    margin: 10px;
+    padding: 25px;
+}
+.band-members{
+    position: relative;    
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: center;
+    padding-top:40%;
+}
+.band-member-name {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    color: #ccc8ff;
+    opacity:1.0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.band-member-role {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    font-weight: normal;
+    color: #ccc8ff;
+    opacity:0.5;
+    letter-spacing: 1px;
+}
+.about-image{
+    border-top: 5px solid #ef008e;
+}
+.about-band{
+    position: relative;
+    background-color: #25072e;
+    border-bottom: 5px solid #ef008e;
+    width: 300px;
+    right: 150px;
+    bottom: 200px;
+    padding: 20px;
+}
+.about-title{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    color: #ccc8ff;
+    opacity:1.0;
+    text-transform: uppercase;
+}
+.about-description{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    font-weight: normal;
+    color: #ccc8ff;
+}
+
+.concerts{
+    position: relative;
+    left: 250px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    width: 700px;
+    align-content: stretch;
+}
+
+.concert-image{
+    width: 300px;
+    margin-left: 20px;
+    margin-bottom:20px;
+    border-bottom: 5px solid #ef008e;
+    
+}
+.concerts-text-under-image{
+    width: 300px;
+    margin-left: 20px;
+    margin-bottom:20px;
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.concert-date{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    color: #ccc8ff;
+    opacity:1.0;
+    order:0;
+}
+.concert-place{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    font-weight: normal;
+    color: #ccc8ff;
+    opacity:0.5;
+    letter-spacing: 1px;
+    order:1;
+}
+.concerts button{
+    order: 1;
+}
+
+.photos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+.photos li img{
+    max-width: 250px;
+    margin-bottom: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+    border-top: 5px solid #ef008e;
+}
+
+address{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    font-weight: normal;
+    color: #ccc8ff;
+    opacity:0.5;
+    letter-spacing: 1px;
+    font-style: normal;
+}
+.form-label {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    font-weight: normal;
+    color: #ccc8ff;
+    opacity:0.5;
+    letter-spacing: 1px;
+}
+.form-input {
+    background: #ccc8ff;
+    opacity: 0.1;
+    width: 300px;
+    border-radius: 5px;
+    padding: 10px;
+    border: 10px;
+}
+
+form{
+    position: relative;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.video{
+    border-top: 5px solid #ef008e;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+.contact{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;     
+}
+
+.contact address{
+    position: relative;
+    padding-left: 50px;
+}
+
+
+.buttons{
+    font-family: "Open sans", sans-serif;
+    font-weight: 600;
+    color: #ccc8ff; 
+    font-size: 12px;
+    text-transform: uppercase;
+    background: #25072e;
+    border-radius: 5px;
+    border-color: #25072e;
+    padding: 7px
 }
