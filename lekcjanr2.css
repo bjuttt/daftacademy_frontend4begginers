@@ -1,6 +1,6 @@
-* {
+*, *:before, *:after {
     box-sizing: border-box;
-}
+  }
 
 body {
     margin: 0;
@@ -70,7 +70,9 @@ body {
     background-color: #25072e;
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed
+    background-attachment: fixed;
+    background-position: center;
+    overflow-x: hidden;
 }
 
 h2 {
@@ -84,14 +86,20 @@ h2 {
     margin: 10px;
     padding: 25px;
 }
+
+.band_members_section{
+    display: flex;
+}
+
 .band-members{
     position: relative;    
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
     justify-content: center;
-    padding-top:40%;
+    align-items: center;
 }
+    
 .band-member-name {
     font-family: 'Open Sans', sans-serif;
     font-size: 15px;
@@ -138,12 +146,12 @@ h2 {
 
 .concerts{
     position: relative;
-    left: 250px;
+    left: 25px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-end;
-    width: 700px;
+    width: 100%;
     align-content: stretch;
 }
 
@@ -185,6 +193,10 @@ h2 {
     order: 1;
 }
 
+.video_section{
+    max-width: 100%;
+}
+
 .photos{
     display: flex;
     flex-direction: row;
@@ -199,6 +211,7 @@ h2 {
     margin-right: 15px;
     border-top: 5px solid #ef008e;
 }
+
 
 address{
     font-family: 'Open Sans', sans-serif;
@@ -262,3 +275,88 @@ form{
     border-color: #25072e;
     padding: 7px
 }
+
+@media only screen and (max-width: 640px){
+
+        main{
+            margin-left: 0px;
+            padding: 0px;
+            overflow-x: hidden;
+
+        }
+
+        .logo {
+            position: static;
+            top: 25px;
+            padding-left: 30%;
+            padding-right: 30%;
+          }
+        .page-navigation{
+            position: static;
+            top: 100px;
+            left:20px
+        }
+        .page-navigation li {
+            padding:5px;
+        }
+        .page-nav-mobile{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+
+        .band-members{
+            flex-wrap: wrap;
+            flex-direction: column;
+            width: 100vw;
+        }
+
+        h2{
+            text-align: center;
+        }
+
+        .about-image{
+            width: 100%;
+                }
+        .about-band{
+            position: static;
+            background-color: #25072e;
+            border-bottom: 5px solid #ef008e;
+            width: 100%;
+            padding: 0px;
+        }
+        .concerts{
+            position: static;
+            left: 5%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+        
+        }
+        .photos{
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .contact-us-image{
+            width: 100%;
+
+        }
+
+        .social {
+            position: static; 
+            top: auto;
+            bottom: 50px;
+            left: 50px;
+        }
+
+        .social-icons{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+
+
+    }
