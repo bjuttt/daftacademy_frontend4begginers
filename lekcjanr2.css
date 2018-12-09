@@ -43,12 +43,19 @@ ul {
     font-size: 13px;
     font-weight: bold;
     color: #ef008e;
-    opacity: 0.8;
     text-decoration: none;
     letter-spacing: 1px;
     text-transform: uppercase;
 }
-
+.page-navigation a:active {
+    color: #350923;
+}
+.menu-item{
+    opacity: 0.5;
+}
+.menu-item:hover {
+    opacity: 1;
+}
 .social {
     position: fixed; 
     top: auto;
@@ -99,24 +106,43 @@ h2 {
     justify-content: center;
     align-items: center;
 }
-    
+
+
+.band-member-image{
+    opacity:0.5;
+}
+
 .band-member-name {
     font-family: 'Open Sans', sans-serif;
     font-size: 15px;
     font-weight: bold;
     color: #ccc8ff;
-    opacity:1.0;
+    opacity: 0.0;
     text-transform: uppercase;
     letter-spacing: 1px;
 }
+
 .band-member-role {
     font-family: 'Open Sans', sans-serif;
     font-size: 13px;
     font-weight: normal;
     color: #ccc8ff;
-    opacity:0.5;
+    opacity: 0.0;
     letter-spacing: 1px;
 }
+
+.band-member-all:hover .band-member-name {
+    opacity: 1;
+}
+
+.band-member-all:hover .band-member-role {
+    opacity: 1;
+}
+
+.band-member-all:hover .band-member-image {
+    opacity: 1;
+}
+
 .about-image{
     border-top: 5px solid #ef008e;
 }
@@ -160,7 +186,11 @@ h2 {
     margin-left: 20px;
     margin-bottom:20px;
     border-bottom: 5px solid #ef008e;
-    
+}
+
+.concert-image:hover {
+    transform: scale(1.1);
+    transition-duration: 1s;
 }
 .concerts-text-under-image{
     width: 300px;
@@ -211,7 +241,10 @@ h2 {
     margin-right: 15px;
     border-top: 5px solid #ef008e;
 }
-
+.photos li img:hover {
+    transform: scale(1.1);
+    transition-duration: 1s;
+}
 
 address{
     font-family: 'Open Sans', sans-serif;
@@ -273,7 +306,24 @@ form{
     background: #25072e;
     border-radius: 5px;
     border-color: #25072e;
+    border-width: 4px;
     padding: 7px
+}
+
+.buttons:hover {
+    border-color: #612777;
+    border-width: 4px;
+}
+
+.buttons:focus {
+    border-color: #a15eb9;
+    border-width: 4px;
+    font-size: 14px;
+}
+
+.button:active {
+    box-shadow: 0px 2px 0px 0px rgba(0,0,0,.2);
+  top: 1px
 }
 
 @media only screen and (max-width: 640px){
